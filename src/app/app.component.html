@@ -3,3 +3,78 @@
 
 <div>{{ 'HELLO' | translate }}</div>
 <div>{{ 'kdkd' | translate }}</div>
+
+<div class="min-h-screen bg-gray-900 text-white p-4">
+  <header class="flex items-center justify-between mb-6">
+    <div class="flex items-center justify-around">
+      <svg class="icon text-emerald-800 mr-1.5 w-full h-full">
+        <use xlink:href="/assets/icons/icons.svg#logo"></use>
+      </svg>
+      <h1 class="text-3xl font-bold text-emerald-800">GameShelf</h1>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <button class="bg-accent text-white px-4 py-2 rounded-xl">+ Нова колонка</button>
+      <img src="/user-avatar.png" alt="User" class="w-10 h-10 rounded-full border border-white" />
+    </div>
+  </header>
+
+  <div class="flex gap-6 overflow-x-auto">
+    <!-- Колонка -->
+    <div class="bg-gray-800 p-4 rounded-2xl w-72 shrink-0">
+      <h2 class="text-xl font-semibold mb-4">📝 Беклог</h2>
+      <div class="flex flex-col gap-4">
+        <!-- Картка гри -->
+        <div class="bg-gray-700 rounded-xl p-3 shadow hover:shadow-lg cursor-pointer">
+          <h3 class="font-semibold text-lg">Baldur's Gate 3</h3>
+          <div class="text-sm text-gray-400">🔹 RPG • 💾 120 год</div>
+          <div class="mt-2 flex gap-1">
+            <span class="text-yellow-400">★ ★ ★ ★ ★</span>
+          </div>
+        </div>
+        <div class="bg-gray-700 rounded-xl p-3 shadow hover:shadow-lg cursor-pointer">
+          <h3 class="font-semibold text-lg">God of War Ragnarok</h3>
+          <div class="text-sm text-gray-400">🔹 Action • 🏆 Пройдена</div>
+          <div class="mt-2 flex gap-1">
+            <span class="text-yellow-400">★ ★ ★ ★ ☆</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Інша колонка -->
+    <div class="bg-gray-800 p-4 rounded-2xl w-72 shrink-0">
+      <h2 class="text-xl font-semibold mb-4">🎮 У процесі</h2>
+      <div class="flex flex-col gap-4">
+        <div class="bg-gray-700 rounded-xl p-3 shadow hover:shadow-lg cursor-pointer">
+          <h3 class="font-semibold text-lg">Red Dead Redemption 2</h3>
+          <div class="text-sm text-gray-400">🔹 Open World • 📍50%</div>
+          <div class="mt-2 flex gap-1">
+            <span class="text-yellow-400">★ ★ ★ ☆ ☆</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ще одна колонка -->
+    <div class="bg-gray-800 p-4 rounded-2xl w-72 shrink-0">
+      <h2 class="text-xl font-semibold mb-4">✅ Пройдено</h2>
+      <div class="flex flex-col gap-4">
+        <div class="bg-gray-700 rounded-xl p-3 shadow hover:shadow-lg cursor-pointer">
+          <h3 class="font-semibold text-lg">Hollow Knight</h3>
+          <div class="text-sm text-gray-400">🔹 Metroidvania • 🏆 Платина</div>
+          <div class="mt-2 flex gap-1">
+            <span class="text-yellow-400">★ ★ ★ ★ ★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .bg-accent {
+    background-color: #3b82f6; /* blue-500 */
+  }
+</style>
+
